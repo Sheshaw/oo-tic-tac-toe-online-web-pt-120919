@@ -1,5 +1,5 @@
 describe "bin/tictactoe" do
-  it 'instantiates an instance of TicTacToe' do
+  itx 'instantiates an instance of TicTacToe' do
     game = TicTacToe.new
     allow($stdout).to receive(:puts)
     allow(game).to receive(:play)
@@ -10,7 +10,7 @@ describe "bin/tictactoe" do
     run_file("./bin/tictactoe")
   end
 
-  it 'calls #play on the instance of TicTacToe' do
+  itx 'calls #play on the instance of TicTacToe' do
     game = TicTacToe.new
     allow($stdout).to receive(:puts)
 
